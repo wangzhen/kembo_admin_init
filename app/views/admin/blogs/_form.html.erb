@@ -1,0 +1,31 @@
+<%= javascript_include_tag "datepicker/WdatePicker" %>
+<% form_for [:admin, @blog], :url => path do |form| %>
+  <table class="data2 data3" cellspacing="0">
+    <tr>
+      <th><label><%= Blog.human_attribute_name("name") %>:</label></th>
+      <td>
+        <%= form.text_field :title %>
+        <%= error_message_on :blog, :title %>
+      </td>
+    </tr>
+    <tr>
+      <th><label><%= Blog.human_attribute_name("content") %>:</label></th>
+      <td>
+        <%= form.text_area :content  ,    :class => "mceEditor"%>
+        <%= error_message_on :blog, :content %>
+      </td>
+    </tr>
+    <tr>
+      <th><label><%= Blog.human_attribute_name("public_datetime") %>:</label></th>
+      <td>
+        <%= form.text_field :public_datetime  ,  :onfocus=>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" %>
+        <%= error_message_on :blog, :public_datetime %>
+      </td>
+    </tr>
+
+    <tr><td  class="center" colspan="2"><%= form.submit t('labels.save') ,:class => 'btn_s' %></td></tr>
+  </table>
+<% end %>
+<div class="link-right">
+  <%= link_to t('labels.back'), admin_blogs_path, :class=>"link_s"%>
+</div>

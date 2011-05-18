@@ -31,6 +31,7 @@ zh:
 
     models:
       administrator: "管理员"
+      blog: "博客管理"
 
 
     attributes:
@@ -38,4 +39,8 @@ zh:
         name: 名称
         password: 密码
         password_confirmation: 确认密码
+      blog:
+        title: 标题
+        content: 内容
+        public_datetime: 公开时间
   

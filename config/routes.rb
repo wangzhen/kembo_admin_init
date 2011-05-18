@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :blogs
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -34,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.login '/',:controller => 'sessions',:action => 'new'
     admin.resources :sessions,:collection => {:home=>[:get,:post],:logout=>[:get,:post] ,:setlocale => :post}
     admin.resources :administrators
+    admin.resources :blogs
   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.

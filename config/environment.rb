@@ -42,4 +42,17 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+  config.active_record.schema_format = :sql
+  #  config.action_controller.session_store = :active_record_store
 end
+CalendarDateSelect.format = :db
+#I18n.load_path += Dir[File.join(RAILS_ROOT, 'config', 'locales', '**', '*.{rb,yml}')]
+ActionView::Base.field_error_proc = Proc.new { |html_tag, instance| "<span class='fieldWithErrors'>#{html_tag}</span>" }
+
+# Exception Notification
+ExceptionNotifier.exception_recipients = %w(wangzhen@kembo-net.com sasaki@kembo-net.com )
+# defaults to exception.notifier@default.com
+ExceptionNotifier.sender_address =
+  %("Application Error" <exception@kembo-net.com>)
+# defaults to "[ERROR] "
+ExceptionNotifier.email_prefix = "mailbulk"

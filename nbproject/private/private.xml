@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/kembo/worksgit/kembo_admin_init/config/database.yml</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/controllers/attachments_controller.rb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/controllers/tops_controller.rb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/controllers/admin/blogs_controller.rb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/controllers/admin/bases_controller.rb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/controllers/admin/administrators_controller.rb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/config/routes.rb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/views/admin/blogs/edit.html.erb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/vendor/plugins/rails_tiny_mce/README.md</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/views/layouts/application.html.erb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/app/views/layouts/admin/base.html.erb</file>
+        <file>file:/home/kembo/worksgit/kembo_admin_init/config/initializers/tiny_mce_plus_config.rb</file>
+    </open-files>
+</project-private>
